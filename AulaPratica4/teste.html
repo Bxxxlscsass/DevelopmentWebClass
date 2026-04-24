@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leonardo da Vinci</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .imagem_leo {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        
+        }
+
+        header {
+            background-color: #506e60;
+        
+        }
+
+        ul {
+            list-style-type: none;
+
+            color: #506e6a;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #506e6a 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #506e6a;
+            color: white;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 6;
+            background-color: #506e6a;
+            color: white;
+            text-align: center;
+        }
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+           
+            }
+
+            .imagem_leo {
+                grid-column-start: 1;
+                grid-column-end: 1;
+           
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+           
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Biografia Leonardo da Vinci</h1>
+        <br>
+
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Biografia</a></li>
+            <li><a href="obras.html">Obras</a></li>
+            <li><a href="teste.html">Teste</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_leo">
+            <img src="leonardo-da-vinci.png">
+            <div class="infos">
+                <p><strong>Ocupação</strong>Pintor italiano</p>
+                <p>
+                    <strong>Data de Nascimento</strong>
+                    15/04/1452
+                </p>
+                <p><strong>Data da Morte</strong>02/05/1519 (aos 67 anos)</p>
+            </div>
+
+        </aside>
+        <section class="principal">
+            <h1>
+                Leonardo da Vinci - teste
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odit, vitae ducimus fugiat commodi saepe dicta! Modi non suscipit veniam voluptas hic dignissimos saepe nesciunt necessitatibus velit doloremque, rem, ullam perspiciatis quis inventore error?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odit, vitae ducimus fugiat commodi saepe dicta! Modi non suscipit veniam voluptas hic dignissimos saepe nesciunt necessitatibus velit doloremque, rem, ullam perspiciatis quis inventore error?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odit, vitae ducimus fugiat commodi saepe dicta! Modi non suscipit veniam voluptas hic dignissimos saepe nesciunt necessitatibus velit doloremque, rem, ullam perspiciatis quis inventore error?</p>
+        </section>
+    </div>
+    <footer class="container">
+        <h1>Desolvolvido para fins educacionais</h1>
+    </footer>
+</div>
+</body>
+</html>
